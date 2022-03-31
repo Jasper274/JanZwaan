@@ -28,7 +28,7 @@
 			      <th scope="col">#</th>
 			      <th scope="col">Naam</th>
 			      <th scope="col">Email</th>
-			      <th scope="col">beheer</th>
+			      <th scope="col">Beheer</th>
 			    </tr>
 			  </thead>
 			  <tbody>

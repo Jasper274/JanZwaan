@@ -37,7 +37,16 @@
 		                           echo($_GET['pw']); ?>" 
 		           placeholder="Wachtwoord">
 		   </div>
-
+		   <div class="form-group">
+		     <label for="pw">Herhaal Wachtwoord</label>
+		     <input type="password" 
+		           class="form-control" 
+		           id="pw" 
+		           name="pw" 
+		           value="<?php if(isset($_GET['pw']))
+		                           echo($_GET['pw']); ?>" 
+		           placeholder="Herhaal Wachtwoord">
+		   </div>
 		   <div class="form-group">
 		     <label for="email">Email</label>
 		     <input type="email" 
