@@ -28,22 +28,16 @@ if (mysqli_num_rows($result) == 1)
       header("location:../owner/owner.html");
       
       }
-      Die('#');
-      if (!$row = mysqli_fetch_assoc($result)) {
-        header("location:../index.html");
-          echo "<script>alert('gebruikersnaam of wachtwoord is fout')</script>";
-        }
+      
   }
   else {
-    die('Het wachtwoord heb ingetyped komt niet over heen met het wachtwoord wat in de databse staat'. $row["Rol"]);
+    header("location:../index.html");
+    //die('Het wachtwoord heb ingetyped komt niet over heen met het wachtwoord wat in de databse staat'. $row["Rol"]);
   }
 
 
 
 }//einde number of rows
-else {
-echo "<script>location.replace('/zwaanurenapp/index.html')</script>";
-}
 
 #|--------------------------------------------------------|#
 #|-wanneer wachtwoord goed -|#
