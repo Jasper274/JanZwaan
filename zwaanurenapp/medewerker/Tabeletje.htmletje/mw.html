@@ -30,12 +30,12 @@
                 <td>
                 <div class=;container;>
                   <!--dit is de input van een tekstbox zodat je ook echt wat kan invullen in de tekst box-->
-<input id="textboxid" ...>
+                <input type="text" id="n1"/><br/><br/>
                   </form>
                 </div></td>
                 <td>
                 <div class=;container;>
-                  <input id="textboxid" ...>
+                  <input type="text" id="n2"/><br/><br/>
                   </form>
                 </div></td>
                 <td>
@@ -51,7 +51,8 @@
                   <option value="Metselen">...</option></td>
                 <td>
                 <div class=;container;>
-                  <input id="textboxid" ...>
+                  <button onclick="calc();">=</button>
+        <input type="text" id="result"/>
                   </form>
                 </div></td>
         </tr>
@@ -61,6 +62,53 @@
                 </div></td>
                 </tr>
               </tr>
+              
+        <script>
+            
+            function calc()
+            {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var n2 = parseFloat(document.getElementById('n2').value);
+                
+                var oper = document.getElementById('operators').value;
+                
+                if(oper === '+')
+                {
+                    document.getElementById('result').value = n1+n2;
+                }
+                
+                if(oper === '-')
+                {
+                    document.getElementById('result').value = n1-n2;
+                }
+                
+                if(oper === '/')
+                {
+                    document.getElementById('result').value = n1/n2;
+                }
+                
+                if(oper === 'X')
+                {
+                    document.getElementById('result').value = n1*n2;
+                }
+            }
+            
+        </script>
+        
+    </head>
+    <body>
+        
+        
+        
+        
+        <select id="operators">
+            <option value="+">+</option>
+        </select>
+        
+        
+        
+    </body>
+</html>
             </body>
             </table>
             <!--dit is de code als je op opslaan klikt dat je word door gestuurd naar een andere pagina-->
