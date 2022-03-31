@@ -15,6 +15,7 @@ if (isset($_POST['create'])) {
 
 	$user_data = 'name='.$name. 'email='.$email;
 
+$dup = mysqli_query($conn, "select * from login where email='$email'");
 
 
 // de errors die worden weergeven als je niks invuld bij naam, wachtwoord en email
@@ -26,7 +27,11 @@ if (isset($_POST['create'])) {
 		header("Location: ../index.php?error=uw email is ongeldig&$user_data");
 	}else if (empty($pw)) {
 		header("Location: ../index.php?error=uw password is ongeldig&$user_data");
+	}else if(mysqli_num_rows($dup)>0); {
+		header("Location: ../index.php?error=uw naam bestaat al");
 	}else {
+
+	
 
 
 // de gegevens sturen naar de database
@@ -53,4 +58,6 @@ $sql="INSERT INTO login(name, email, pw) VALUES('$name','$email','$hased_wachtwo
        }
 	}
 
-}
+		
+	
+
