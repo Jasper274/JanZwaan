@@ -19,4 +19,4 @@ daaronder voeg je de route naar je htdocs en dan naar JanZwaan (doe dit tot dat 
 7. link naar je map in htdocs ( link naar htdocs en dan naar JanZwaan totdat je select kan kiezen)
 8. deze url toevoegen https://github.com/Jasper274/JanZwaan
 9.
-ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
