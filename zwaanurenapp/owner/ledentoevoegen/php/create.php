@@ -27,10 +27,16 @@ $dubbel = mysqli_query($conn, "select email from login where email='$email'");
 		header("Location: ../index.php?error=uw email is ongeldig&$user_data");
 	}else if (empty($pw)) {
 		header("Location: ../index.php?error=uw password is ongeldig&$user_data");
-	}else if(mysqli_num_rows($dubbel)> 0); {
-		header("Location: ../index.php?error=uw email bestaat al&$user_data");
 	}
+	 if(mysqli_num_rows($dubbel)> 0); {
+		header("Location: ../index.php?error=uw email bestaat al&$user_data");
+	 }
 	}else{
+
+	//}else if(mysqli_num_rows($dubbel)> 0); {
+		//header("Location: ../index.php?error=uw email bestaat al&$user_data");
+	//}
+	//}else{
 
 		
 
@@ -61,4 +67,4 @@ $sql="INSERT INTO login(name, email, pw) VALUES('$name','$email','$hased_wachtwo
 
 		
 	
-
+ 
