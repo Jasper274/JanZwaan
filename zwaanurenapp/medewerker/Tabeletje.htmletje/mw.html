@@ -21,7 +21,7 @@
         </tr>
         <tr>
           <!--hier onder zie je maandag tot vrijdag text tabellen die je kunt invullen-->
-                <td class="Maandag"><select class="dropmenu" name="Drop-out menu" id="Drop-out menu">
+                <td class="Maandag"><select class="Drop-out-menu-maandag-vrijdag" name="Drop-out menu" id="Drop-out menu">
                   <option value="Slopen">Maandag</option>
                   <option value="Straten">Dinsdag</option>
                   <option value="Metselen">Woensdag</option>
@@ -30,12 +30,56 @@
                 <td>
                 <div class=;container;>
                   <!--dit is de input van een tekstbox zodat je ook echt wat kan invullen in de tekst box-->
-                <input type="text" id="n1"/><br/><br/>
+                  <select class="Drop-out-menu-maandag-vrijdag" name="Drop-out menu" id="Drop-out menu">
+                    <option value="Slopen">04:00</option>
+                    <option value="Straten">05:00</option>
+                    <option value="Metselen">06:00</option>
+                    <option value="Voegen">07:00</option>
+                    <option value="Metselen">08:00</option>
+                    <option value="Metselen">09:00</option>
+                    <option value="Metselen">10:00</option>
+                    <option value="Metselen">11:00</option>
+                    <option value="Metselen">12:00</option>
+                    <option value="Metselen">13:00</option>
+                    <option value="Metselen">14:00</option>
+                    <option value="Metselen">15:00</option>
+                    <option value="Metselen">16:00</option>
+                    <option value="Metselen">17:00</option>
+                    <option value="Metselen">18:00</option>
+                    <option value="Metselen">19:00</option>
+                    <option value="Metselen">20:00</option>
+                    <option value="Metselen">21:00</option>
+                    <option value="Metselen">22:00</option>
+                    <option value="Metselen">23:00</option>
+                    <option value="Metselen">24:00</option>
+
+
                   </form>
                 </div></td>
                 <td>
                 <div class=;container;>
-                  <input type="text" id="n2"/><br/><br/>
+                  <select class="Drop-out-menu-maandag-vrijdag" name="Drop-out menu" id="Drop-out menu">
+                    <option value="Tijd">04:00</option>
+                    <option value="Tijd">05:00</option>
+                    <option value="Tijd">06:00</option>
+                    <option value="Tijd">07:00</option>
+                    <option value="Tijd">08:00</option>
+                    <option value="Tijd">09:00</option>
+                    <option value="Tijd">10:00</option>
+                    <option value="Tijd">11:00</option>
+                    <option value="Metselen">12:00</option>
+                    <option value="Metselen">13:00</option>
+                    <option value="Metselen">14:00</option>
+                    <option value="Metselen">15:00</option>
+                    <option value="Metselen">16:00</option>
+                    <option value="Metselen">17:00</option>
+                    <option value="Metselen">18:00</option>
+                    <option value="Metselen">19:00</option>
+                    <option value="Metselen">20:00</option>
+                    <option value="Metselen">21:00</option>
+                    <option value="Metselen">22:00</option>
+                    <option value="Metselen">23:00</option>
+                    <option value="Metselen">24:00</option>
                   </form>
                 </div></td>
                 <td>
@@ -43,16 +87,15 @@
                   <input id="textboxid" ...>
                   </form>
                 </div></td>
-                <td class="Maandag"><select class="menuproject" name="Drop-out menu" id="Drop-out menu">
-                  <option value="Slopen">Slopen</option>
-                  <option value="Straten">Straten</option>
-                  <option value="Metselen">Groen voorziening</option>
-                  <option value="Voegen">Bouw</option>
-                  <option value="Metselen">Klusje hans</option></td>
+                <td class="Maandag"><select class="Drop-out-menu-maandag-vrijdag" name="Drop-out menu" id="Drop-out menu">
+                  <option value="Slopen">...</option>
+                  <option value="Straten">...</option>
+                  <option value="Metselen">...</option>
+                  <option value="Voegen">...</option>
+                  <option value="Metselen">...</option></td>
                 <td>
-                <div class=;container;>
-                  <button onclick="calc();">=</button>
-        <input type="text" id="result"/>
+                  <div class=;container;>
+                  <input id="textboxid" ...>
                   </form>
                 </div></td>
         </tr>
@@ -62,56 +105,10 @@
                 </div></td>
                 </tr>
               </tr>
-              
-        <script>
-            
-            function calc()
-            {
-                var n1 = parseFloat(document.getElementById('n1').value);
-                var n2 = parseFloat(document.getElementById('n2').value);
-                
-                var oper = document.getElementById('operators').value;
-                
-                if(oper === '+')
-                {
-                    document.getElementById('result').value = n1+n2;
-                }
-                
-                if(oper === '-')
-                {
-                    document.getElementById('result').value = n1-n2;
-                }
-                
-                if(oper === '/')
-                {
-                    document.getElementById('result').value = n1/n2;
-                }
-                
-                if(oper === 'X')
-                {
-                    document.getElementById('result').value = n1*n2;
-                }
-            }
-            
-        </script>
-        
-    </head>
-    <body>
-        
-        
-        
-        
-        <select id="operators">
-            <option value="+">+</option>
-        </select>
-        
-        
-        
-    </body>
-</html>
             </body>
             </table>
             <!--dit is de code als je op opslaan klikt dat je word door gestuurd naar een andere pagina-->
-  <form class="submit" method="get" action="/verstuurd.html">
-    <button class="button button1">Opslaan</button>
-  </form>
+            <form class="submit" method="get" action="/zwaanurenapp/medewerker/Tabeletje.htmletje/verstuurd.html">
+              <button class="button button1">Opslaan</button>
+            </form>
+  
