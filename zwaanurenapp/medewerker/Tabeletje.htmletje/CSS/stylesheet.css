@@ -78,7 +78,7 @@ tr {
     font-size:10pt;
 }
 
-.Drop-out-menu {
+.dropmenu {
     height: 56px;
     width: 66px;
 }
@@ -87,7 +87,7 @@ tr {
     color: rgb(253, 0, 0);
 }
 
-.Drop-out-menu-maandag-vrijdag {
+.menuproject {
     height: 56px;
     width: 170px;
     text-align: center;
