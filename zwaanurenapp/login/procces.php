@@ -19,7 +19,7 @@ if (mysqli_num_rows($result) == 1)
   //  die('De verficatie van wachtwoord gaat goed'. $row["Rol"]);
     if($row["Rol"]=="werknemer")
     {
-        header("location:../medewerker/Tabeletje.htmletje/mw.html");
+        header("location:../tabeletje.htmletje/mw.html");
       }
       
       if($row["Rol"]=="owner")
