@@ -10,6 +10,12 @@
 	<div class="container">
 		<div class="box">
 			<h4 class="display-4 text-center">Account Overzicht</h4><br>
+			<div class="link-right">
+				<a  href="index.php" id="btn" class="btn btn-success">Maak Account</a>
+				<span style="color:white;" class="space">-</span>
+				<a href="../owner.html" class="btn btn-primary">Admin-panel</a>
+				<span style="color:white;" class="space">---------------------------------------</span>
+			</div>
 			<?php if (isset($_GET['success'])) { ?>
 		    <div class="alert alert-success" role="alert">
 			  <?php echo $_GET['success']; ?>
@@ -26,12 +32,6 @@
 			    </tr>
 			  </thead>
 			  <tbody>
-			  <div class="link-right">
-				<a  href="index.php" id="btn" class="btn btn-success">Maak Account</a>
-				<span style="color:white;" class="space">-</span>
-				<a href="../owner.html" class="btn btn-primary">Admin-panel</a>
-				<span style="color:white;" class="space">---------------------------------------</span>
-			</div>
 			  	<?php 
 			  	   $i = 0;
 			  	   while($rows = mysqli_fetch_assoc($result)){
