@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=unbunt:wght@300;400;500;700&display=swa');
 body {
-    background-image: url("img-slider-1.jpg");
+    /*background-image: url("img-slider-1.jpg");*/
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
@@ -53,21 +53,25 @@ tr {
     outline: none;
     border: none;
     border-radius: 48px;
-    background-color: #ff0000;
-    color: rgb(0, 0, 0);
+    background-color: #000000;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-weight: 600;
-    margin: 10% 0;
+    margin: 10px 0;
     transition: all 0.5s;
     justify-content: center;
 
 }
 
+.button:hover {
+
+    background-color: black;
+}
 
   .submit {
-    margin-left: -10%;
+    margin-left: 950px;
     text-align: center;
-    margin-top: -5%;
+    margin-top: 10px;
   }
 
   
@@ -78,7 +82,7 @@ tr {
     font-size:10pt;
 }
 
-.dropmenu {
+.Drop-out-menu {
     height: 56px;
     width: 66px;
 }
@@ -87,7 +91,7 @@ tr {
     color: rgb(253, 0, 0);
 }
 
-.menuproject {
+.Drop-out-menu-maandag-vrijdag {
     height: 56px;
     width: 170px;
     text-align: center;
