@@ -51,7 +51,7 @@
 		   <button type="submit" 
 		           class="btn btn-success"
 		           name="update">Update</button>
-		    <a href="read.php" class="btn btn-danger">Cancel</a>
+		    <a href="read.php" class="btn btn-danger">Annuleer</a>
 	    </form>
 	</div>
 </body>
