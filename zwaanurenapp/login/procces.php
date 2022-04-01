@@ -46,7 +46,7 @@ if (mysqli_num_rows($result) == 1)
 
 // } else{
   //  echo "<script>location.replace('/zwaanurenapp/login/logintest.html')</script>";
-  //  echo "<script>alert('login succesfull')</script>";
+  // echo "<script>alert('login succesfull')</script>";
     
 #|--------------------------------------------------------|#
 #|-wanneer wachtwoord fout -|#
