@@ -24,7 +24,7 @@ $dubbel = mysqli_query($conn, "select email from login where email='$email'");
 	 if (empty($name)) {
 		header("Location: ../index.php?error=Uw naam is ongeldig&$user_data");
 	}else if (empty($email)) {
-		header("Location: ../index.php?error=Uw email is  ongeldig&$user_data");
+		header("Location: ../index.php?error=Uw email is ongeldig&$user_data");
 	}else if(mysqli_num_rows($dubbel)> 0) {
 			header("Location: ../index.php?error=Dit email bestaat al&$user_data");
 	}else if (empty($pw)) {
