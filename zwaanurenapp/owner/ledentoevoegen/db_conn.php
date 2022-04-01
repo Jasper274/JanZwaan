@@ -1,7 +1,7 @@
 <?php  
 
 
-//connectie naar de database 
+//maakt connectie naar de database 
 
 
 $sname = "localhost";
