@@ -14,6 +14,8 @@ if(isset($_GET['id'])){
 
 // de gegevens uit de database verwijderen van de login die door een admin verwijderd worden
 
+   
+   
 
 
 	$sql = "DELETE FROM login
