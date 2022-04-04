@@ -14,7 +14,7 @@ if (isset($_POST['create'])) {
 	$pw = validate($_POST['pw']);
 	$hpw =  validate($_POST['hpw']);
 
-	$user_data = 'name='.$name. 'email='.$email;
+	$user_data = 'name='.$name. '&'. 'email='.$email;
 
 $dubbel = mysqli_query($conn, "select email from login where email='$email'");
 
@@ -27,7 +27,7 @@ $dubbel = mysqli_query($conn, "select email from login where email='$email'");
 	}else if (empty($email)) {
 		header("Location: ../index.php?error=Uw email is ongeldig!&$user_data");
 	}else if (empty($hpw))  {
-		header("location: ../index.php?error=Uw Wachtwoord is ongeldig!&$user_data");
+		header("location: ../index.php?error=Uw wachtwoord is ongeldig!&$user_data");
 	}else if(mysqli_num_rows($dubbel)> 0) {
 			header("Location: ../index.php?error=Dit email bestaat al!&$user_data");
 	}else if (empty($pw)) {
