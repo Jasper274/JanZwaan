@@ -8,20 +8,22 @@
 </head>
 <body>
 
-<h1>Uren registratie jan zwaan</h1>
+
+<h1 class="text">Uren registratie jan zwaan</h1>
+<div class="box">
 <form>
 	<label for="timeStart">Begin Tijd</label>
-	<input name="timeStart" type="text" placeholder="00:00">
+	<input class="begin" name="timeStart" type="text" placeholder="00:00">
 	<label for="timeEnd">Eind Tijd</label>
-	<input name="timeEnd" type="text" placeholder="00:00">
+	<input class="eind" name="timeEnd" type="text" placeholder="00:00">
 	<label for="timeBreak">Pauze in minuten</label>
-	<input name="timeBreak" type="text" placeholder="00">
+	<input class="pauze" name="timeBreak" type="text" placeholder="00">
 	
 </form>
 <div id="outputStandard"></div>
 <div id="outputConverted"></div>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
-
+</div>
 </body>
 </html>

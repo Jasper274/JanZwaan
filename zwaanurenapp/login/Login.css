@@ -10,9 +10,9 @@
 }
 
 body {
-    background: linear-gradient(to top, rgba(29, 28, 28, 0.5)50%,rgba(27, 27, 27, 0.5)50%), url("../images/background.jpg");
-    background-size: cover;
-    font-family: sans-serif;
+  background: linear-gradient(to top, rgba(29, 28, 28, 0.5)50%,rgba(27, 27, 27, 0.5)50%), url("../images/background.jpg");
+  background-size: cover;
+  font-family: sans-serif;
 } 
 
 .login-wrapper {
