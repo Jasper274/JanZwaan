@@ -1,1 +1,16 @@
+.button1 {
+    width: 150px;
+    height: 49px;
+    outline: none;
+    border: none;
+    border-radius: 48px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 60px;
+    margin-left: 55%;
+    transition: all 0.5s;
+    justify-content: center;
 
+}
