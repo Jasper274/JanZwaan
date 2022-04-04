@@ -13,8 +13,10 @@ input {
 
 .box {
   margin-left: 45%;
+  border: solid;
+  margin-right: 35%;
  
-  
+
 }
 
 .text {
@@ -47,6 +49,18 @@ input {
 }
 
 .pauze {
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.textbox{
   width: 100%;
   background-color: white;
   color: black;
