@@ -20,4 +20,4 @@ daaronder voeg je de route naar je htdocs en dan naar JanZwaan (doe dit tot dat 
 8. deze url toevoegen https://github.com/Jasper274/JanZwaan
 9.
 10.
-adafdafsareagresgrstsgtrshgrewshgsw
+adafdafsareagresgrstsgtrshgrewshgswsasdasdasdasdasd
