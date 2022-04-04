@@ -33,7 +33,7 @@ $dubbel = mysqli_query($conn, "select email from login where email='$email'");
 	}else if (empty($pw)) {
 		header("Location: ../index.php?error=Uw password is ongeldig!&$user_data");
 	}else if ($pw != $hpw) {
-		header("location:../index.php?error=Wachtwoorden komen niet over heen!&$user_data");
+		header("location:../index.php?error=Wachtwoorden komen niett over heen!&$user_data");
 	}else{
 // in dien geen errors dan de gegevens sturen naar de database en de wachtwoord hashen
 		$hased_wachtwoord = password_hash($pw, PASSWORD_DEFAULT);
