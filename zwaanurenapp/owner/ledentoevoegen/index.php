@@ -38,13 +38,13 @@
 		           placeholder="Wachtwoord">
 		   </div>
 		   <div class="form-group">
-		     <label for="pw">Herhaal Wachtwoord</label>
+		     <label for="hpw">Herhaal Wachtwoord</label>
 		     <input type="password" 
 		           class="form-control" 
 		           id="pw" 
-		           name="pw" 
-		           value="<?php if(isset($_GET['pw']))
-		                           echo($_GET['pw']); ?>" 
+		           name="hpw" 
+		           value="<?php if(isset($_GET['hpw']))
+		                           echo($_GET['hpw']); ?>" 
 		           placeholder="Herhaal Wachtwoord">
 		   </div>
 		   <div class="form-group">
