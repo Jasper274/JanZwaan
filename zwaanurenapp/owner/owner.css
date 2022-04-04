@@ -1,3 +1,7 @@
+body {
+    background: linear-gradient(to top, rgba(29, 28, 28, 0.5)50%,rgba(27, 27, 27, 0.5)50%), url("../images/architect-g21dd3cea4_1920.jpg");
+}
+
 .cont {
     margin-left: 300px;
     position: fixed;
@@ -55,15 +59,11 @@
 }
 
 .tekst {
+    text-align: center;
     color: black;   
-    margin: 10% 10% 10% 10%;
+    margin-top: 15%;
+    font-size: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
 
-.aplogo {
-    height: 20%;
-    width: 45%;
-    margin: 65% 0 0 20%;
-
-}
