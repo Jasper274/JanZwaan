@@ -1,0 +1,59 @@
+body {
+  background-color: rgb(40, 123, 255);
+}
+
+form {
+  width: 150px;
+  margin: 20px 0;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.box {
+  margin-left: 45%;
+ 
+  
+}
+
+.text {
+  text-align: center;
+  margin-top: 20%;
+}
+
+.begin {
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.eind {
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.pauze {
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}

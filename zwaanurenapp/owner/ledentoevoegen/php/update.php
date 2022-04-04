@@ -35,19 +35,25 @@ if (isset($_GET['id'])) {
 	$pw = validate($_POST['pw']);
 	$email = validate($_POST['email']);
 	$id = validate($_POST['id']);
+        $hpw = validate($_POST['hpw']);
 
         
 
         //eror voor als de gegevens verkeerd zijn ingevud
+        
         $dubbel = mysqli_query($conn, "select email from login where email='$email'");
 	if (empty($name)) {
-		header("Location: ../index.php?error=Uw naam is ongeldig&$user_data");
+		header("Location: ../index.php?error=Uw naam is ongeldig!&$user_data");
+        }else if (empty($hpw)) {
+                header("location:../index.php?error=Uw wachtwoord is ongeldig!&$user_data");
 	}else if (empty($email)) {
-		header("Location: ../index.php?error=Uw email is ongeldig&$user_data");
+		header("Location: ../index.php?error=Uw email is ongeldig!&$user_data");
 	}else if(mysqli_num_rows($dubbel)> 0) {
-			header("Location: ../index.php?error=Dit email bestaat al&$user_data");
+			header("Location: ../index.php?error=Dit email bestaat al!&$user_data");
 	}else if (empty($pw)) {
-		header("Location: ../index.php?error=Uw password is ongeldig&$user_data");
+		header("Location: ../index.php?error=Uw password is ongeldig!&$user_data");
+        }else if ($pw != $hpw) {
+                header("location: ../index.php?error=Wachtwoorden komen niet over heen!");
 	}else{
 
 
