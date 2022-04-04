@@ -1,8 +1,13 @@
-form {
-  width: 150px;
-  margin: 20px 0;
+body {
+  margin: 10% 0% 0% 42%;
 }
 
+form {
+  width: 150px;
+}
+
+/*ruimte tussen de textboxes*/
 input {
   margin-bottom: 10px;
 }
+
