@@ -1,5 +1,6 @@
 body {
-    background: linear-gradient(to top, rgba(29, 28, 28, 0.5)50%,rgba(27, 27, 27, 0.5)50%), url("../images/architect-g21dd3cea4_1920.jpg");
+    background-image: url(../images/architect-g21dd3cea4_1920.jpg);
+    background-size: cover;
 }
 
 .cont {
