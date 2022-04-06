@@ -47,7 +47,7 @@
 			      	  <a href="php/delete.php?id=<?=$rows['id']?>" 
 			      	     class="btn btn-danger">Verwijder</a>
 
-			      	  <a href="../UrenOverzicht/test.html" 
+			      	  <a href="../week/week.html" 
 			      	     class="btn btn-primary">Overzicht</a>
 			      </td>
 			    </tr>
