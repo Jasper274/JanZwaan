@@ -20,7 +20,7 @@ $dubbel = mysqli_query($conn, "select email from login where email='$email'");
 
 
 // de errors die worden weergeven als je niks invuld bij naam, wachtwoord en email of als de mail al ingebruik is
-
+	
 
 	 if (empty($name)) {
 		header("Location: ../index.php?error=Uw naam is ongeldig!&$user_data");
