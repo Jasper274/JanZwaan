@@ -71,3 +71,13 @@ input {
   cursor: pointer;
   text-align: center;
 }
+
+.Drop-out-menu-maandag-vrijdag{
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
