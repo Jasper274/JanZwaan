@@ -1,7 +1,7 @@
 $(function(){
 	
 	var update = function(){
-		// Krijgt gegevens van de form
+		// Get data from the form
 		var data = $('form').serializeArray();
 		
 		// Make start & end times into dates
