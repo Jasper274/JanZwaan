@@ -1,3 +1,8 @@
+body {
+    background-image: url(/zwaanurenapp/Images/background.jpg);
+    background-size: cover;
+}
+
 .button1 {
     width: 150px;
     height: 49px;
@@ -12,7 +17,6 @@
     margin-left: 55%;
     transition: all 0.5s;
     justify-content: center;
-
 }
 
 .cont {
@@ -45,7 +49,7 @@
     margin-top: 30px;
     display: grid;
     border: none;
-    /*background-color: white;*/
+  
     
 }
 
