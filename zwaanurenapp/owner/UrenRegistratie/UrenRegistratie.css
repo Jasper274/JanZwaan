@@ -1,3 +1,7 @@
+body {
+    background-image: url(/zwaanurenapp/Images/background.jpg);
+}
+
 .cont {
     margin-left: 300px;
     position: fixed;
