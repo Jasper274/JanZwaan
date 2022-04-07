@@ -1,15 +1,12 @@
-<<<<<<< HEAD:style.css
-=======
 body {
   background-color: white;
 }
 
->>>>>>> 5d448f8cad38d65b49c89885a881e20bc38c466a:zwaanurenapp/medewerker/ureninvullen/style.css
 form {
   width: 150px;
-  margin: 70px 0;
-  margin-left: 45%;
-  color: rgb(0, 0, 0);
+  margin: 100px 0;
+  margin-left: 25%;
+  color: rgb(255, 255, 255);
   font-family: sans-serif;
 }
 
@@ -49,7 +46,9 @@ input {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  background-color: #ffffff
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -64,8 +63,13 @@ input {
 }
 
 .Submitbutton{
-  background-color: #ff0000;
-  color: #2600ff;
+  background-color: #000000;
+  color: #ffffff;
 }
 
+.Backgroundpage{
+  background-color: #555555;
+  margin-inline: 38%;
+  
+}
 
