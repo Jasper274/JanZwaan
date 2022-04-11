@@ -98,7 +98,7 @@ body {
     color: #D5131D;
     font-size: .8rem;
   }
-
+  /*dit is voor het stylen van de submit button*/
   .submit-btn {
     display: block;
     margin-left: auto;
@@ -116,9 +116,7 @@ body {
   }
 
   .forgot-pw {
-    color: inherit;
-    
-  
+    color: inherit
   }
   
   #forgot-pw {
