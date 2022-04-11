@@ -1,42 +1,15 @@
-<!--<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Zwaan Werken</title>
-  <link rel="stylesheet" href="./style.css">
-  
-</head>
-<body>
+<?php
+$dbhost = "localhost";
+$dbuser = "root";
+$dbwachtwoord = "";
+$dbnaam = "zwaanwerken";
 
+$conn = new mysqli ($dbhost, $dbuser, $dbwachtwoord, $dbnaam,);
 
-<form action="test.php" method="post">
-	<div class="achtergrond">
-	<label for="timeStart">Maandag/Vrijdag</label>
-	<input type="date">
-	<label for="timeStart">Projecten</label>
-	<input texboxid.. placeholder="Projecten">
-<h1 class="text">Uren registratie jan zwaan</h1>
-<div class="box">
-<form>
-	<label for="timeStart">Begin Tijd</label>
-	<input name="timeStart" type="text" placeholder="00:00">
-	<label for="timeEnd">Eind Tijd</label>
-	<input name="timeEnd" type="text" placeholder="00:00">
-	<label for="timeBreak">Pauze in minuten</label>
-	<input name="timeBreak" type="text" placeholder="00">
-  <input div class="Submitbutton" type="submit" value="opslaan"/>
-</form>
-<div id="outputStandard"></div>
-<div id="outputConverted"></div>
-<!-- partial -->
- <!---- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
-  
-  <main>
-</main>
-  
-</body>
-</html> -->
+$sql2="SELECT * FROM projecten";
 
+$run_gry=mysqli_query($conn,$sql2,);
+?>
 
 <!DOCTYPE html>
 <html>
@@ -58,7 +31,22 @@ input[type=text], select {
   font-family: 'Poppins', sans-serif;
 }
 
-input[type=submit] {
+
+  
+.btn2 {
+  width: 100%;
+  background-color: #c22f2f;
+  color: white;
+  padding: 7px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  
+}
+.btn {
   width: 100%;
   background-color: #2fc234;
   color: white;
@@ -72,6 +60,9 @@ input[type=submit] {
   
 }
 
+.btn2:hover {
+  background-color: #a52323;
+}
 input[type=submit]:hover {
   background-color: #38833c;
 }
@@ -85,6 +76,7 @@ input[type=submit]:hover {
   margin-left: 39%;
   margin-top: 10%;
   border-radius: 25px;
+  
 }
 
 h3 {
@@ -92,13 +84,23 @@ h3 {
     text-align: center;
 }
 
+@media screen and (max-width: 900px){
+  .box {
+    width: 70%;
+    margin: 50px auto;
+  }
+}
+
+
 </style>
 <body>
-
-    
+<head>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="box">
-        <h3>Projecten toevoegen</h3>
-  <form action="projecten.php" method="post">
+      <input type="hidden" name="action" value="ureninvullen">
+        <h3>Uren invullen</h3>
+  <form action="ureninvullen.php" method="post">
     <label for="timeStart">Begin tijd</label>
     <input name="timeStart" type="text" placeholder="00:00">
     <label for="timeEnd">Eind tijd</label>
@@ -106,7 +108,7 @@ h3 {
     <label for="timeBreak">Pauze in minuten</label>
 	  <input name="timeBreak" type="text" placeholder="00">
     <label for="dagen">Werkdag</label>
-    <select id ="dagen">
+    <select id ="dagen" name="dagen">
         <option value="Maandag">Maandag</option>
         <option value="Dinsdag">Dinsdag</option>
         <option value="Woensdag">Woensdag</option>
@@ -114,16 +116,21 @@ h3 {
         <option value="Vrijdag">Vrijdag</option>
         <option value="Zaterdag">Zaterdag</option>
     </select>
-    <label for="dagen">Werkdag</label>
-    <td class="Maandag"><select class="Drop-out-menu-maandag-vrijdag" name="Drop-out menu" id="Drop-out menu">
-        <option value="project1">Project</option>
-        
-    <input type="submit" value="OPSLAAN">
+    <label for="project">Project</label>
+    <select name="project" id="project">
+      <?php while ($row1 = mysqli_fetch_array($run_gry)):;?>
+      <option><?php echo $row1[1];?></option>
+      <?php endwhile;?>
+    </select>
+        <a href="./UrenRegistratie.html">
+     <input type="button" value="ANNULEREN" class="btn2">   
+     </a>
+    <input type="submit" value="OPSLAAN" class="btn">
   </form>
   <div id="outputStandard"></div>
 <div id="outputConverted"></div>
- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
-  
+<script  src="./script.js"></script>
+</head>
 </div>
 
 </body>
