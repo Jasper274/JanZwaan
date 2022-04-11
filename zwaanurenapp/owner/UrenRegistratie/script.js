@@ -31,11 +31,11 @@ $(function(){
 		
 		// Output the standard hours and minutes
 		if (hours < 1) {
-			$('#outputStandard').text("Jij hebt gewerkt " + minutes + " minuten.");
+			$('#outputStandard').text("Jij hebt " + minutes + " minuten gewerkt.");
 		} else if (hours > 1) {
-			$('#outputStandard').text("Jij hebt gewerkt " + hours + " uur en " + minutes + " minuten.");
+			$('#outputStandard').text("Jij hebt " + hours + " uur en " + minutes + " minuten gewerkt.");
 		} else if (hours = 1) {
-			$('#outputStandard').text("Jij hebt gewerkt " + hours + " uur en " + minutes + " minuten.");
+			$('#outputStandard').text("Jij hebt " + hours + " uur en " + minutes + " minuten gewerkt.");
 		} else {
 			$('#outputStandard').text("Jij hebt gewerkt");
 		}

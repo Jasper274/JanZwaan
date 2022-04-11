@@ -20,7 +20,7 @@ $dubbel = mysqli_query($conn, "select email from login where email='$email'");
 
 
 // de errors die worden weergeven als je niks invuld bij naam, wachtwoord en email of als de mail al ingebruik is
-
+	
 
 	 if (empty($name)) {
 		header("Location: ../index.php?error=Uw naam is ongeldig!&$user_data");
@@ -35,8 +35,8 @@ $dubbel = mysqli_query($conn, "select email from login where email='$email'");
 	}else if ($pw != $hpw) {
 		header("location:../index.php?error=Wachtwoorden komen niet over heen!&$user_data");
 	}else{
-// in dien geen errors dan de gegevens sturen naar de database en de wachtwoord hashen
-		$hased_wachtwoord = password_hash($pw, PASSWORD_DEFAULT);
+// in dien geen errors dan d$hased_wachtwoord = password_hash($pw, PASSWORD_DEFAULT);e gegevens sturen naar de database en de wachtwoord hashen
+		
 		$sql="INSERT INTO login(name, email, pw) VALUES('$name','$email','$hased_wachtwoord')";
 		$result = mysqli_query($conn, $sql);
 		if ($result) {

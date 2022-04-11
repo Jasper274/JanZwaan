@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');   
+
+body {
+    background-color: #ccc;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 35px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+.btn1 {
+  width: 100%;
+  background-color: #2fc234;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  
+}
+.btn2 {
+  width: 100%;
+  background-color: #c52b2b;
+  color: white;
+  padding: 7px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+
+}
+
+input[type=submit]:hover {
+  background-color: #38833c;
+}
+
+.box {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  width: 20%;
+  margin-left: 39%;
+  margin-top: 15%;
+  border-radius: 25px;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 900px){
+  .box {
+    width: 70%;
+    margin: 50px auto;
+  }
+}
+
+
+</style>
+<body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="box">
+        <h3>Projecten toevoegen</h3>
+  <form action="projecten.php" method="post">
+    <label for="fname">Project naam</label>
+    <input type="text" id="fname" autocomplete="off" name="projectnaam" placeholder="Project naam" required>
+
+    <label for="lname">Klant naam</label>
+    <input type="text" id="lname" name="klantnaam" placeholder="Klant naam">
+    </select> 
+    <a href="../zwaanurenapp/owner/owner.html">
+    <input type="button" value="ANNULEREN" class="btn2">
+    </a>
+    <input type="submit" value="OPSLAAN" class="btn1" name="exit">
+  </form>
+</div>
+</head>
+</body>
+</html>
+
+

@@ -10,7 +10,7 @@
 }
 
 body {
-  background: linear-gradient(to top, rgba(29, 28, 28, 0.5) 50%,rgba(27, 27, 27, 0.5) 50%), url("../images/background.jpg");
+  background: linear-gradient(to top, rgba(29, 28, 28, 0.5) 50%,rgba(27, 27, 27, 0.5) 50%), url("../images/janhog.png");
   background-size: cover;
   font-family: sans-serif;
 } 
@@ -159,6 +159,13 @@ body {
   body {
     margin: 0;
     padding: 0;
+  }
+
+  @media screen and (max-width: 900px){
+    .login-wrapper {
+      width: 100%;
+      margin: 50px auto;;
+    }
   }
 
  
